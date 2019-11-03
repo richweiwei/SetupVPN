@@ -1,4 +1,6 @@
-# SetupVPN
+# 快速在新服务器上搭建VPN服务
+
+# 为方便下载，在settings中把res设置为公开
 
 1、在新服务器上下载并安装vpnsetup
 
@@ -25,3 +27,5 @@ https://github.com/richweiwei/SetupVPN/raw/master/vpn.mobileconfig
 5.2 github下载不了， 从新服务器下载
 
 http/1.2.3.4/vpn.mobileconfig
+
+# 为了安全，在settings中把res设置为私有
