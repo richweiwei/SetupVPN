@@ -33,4 +33,6 @@ http/1.2.3.4/vpn.mobileconfig
 
 # 2.管理vpn用户，请下载该github下的脚本
 
+在服务器上下载extras目录下文件，或者从
+
 https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/manage-users.md
