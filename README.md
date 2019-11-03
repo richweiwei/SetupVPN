@@ -1,6 +1,6 @@
-# 快速在新服务器上搭建VPN服务
+# 1.快速在新服务器上搭建VPN服务
 
-# 为方便下载，在settings中把res设置为公开
+# #为方便下载，在settings中把res设置为公开
 
 1、在新服务器上下载并安装vpnsetup
 
@@ -28,4 +28,9 @@ https://github.com/richweiwei/SetupVPN/raw/master/vpn.mobileconfig
 
 http/1.2.3.4/vpn.mobileconfig
 
-# 为了安全，在settings中把res设置为私有
+# #为了安全，在settings中把res设置为私有
+
+
+# 2.管理vpn用户，请下载该github下的脚本
+
+https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/manage-users.md
