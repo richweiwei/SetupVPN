@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+        <key>UserDefinedName</key>
+        <string>USVPN</string>
+        <key>PayloadDisplayName</key>
+        <string>USVPN</string>
+        <key>PayloadIdentifier</key>
+        <string>com.channel.vpn.wifi</string>
+        <key>PayloadUUID</key>
+        <string>85284094-A9F5-47D7-A1CD-6F831B2FFAC1</string>
+        <key>VPNType</key>
+        <string>IPSec</string>
+        <key>IPSec</key>
+        <dict>
+          <key>RemoteAddress</key>
+          <string>216.155.157.160</string><!---->
+
+          <key>AuthenticationMethod</key>
+          <string>SharedSecret</string>
+
+          <key>XAuthName</key>
+          <string>vpnuser</string><!---->
+
+          <key>XAuthPassword</key>
+          <string>GEktBPpJFB69T2g3</string><!---->
+
+          <key>XAuthEnabled</key>
+          <integer>1</integer>
+          <key>LocalIdentifierType</key>
+          <string>KeyID</string>
+          
+          <key>SharedSecret</key>
+          <string>uYPuCgDfKMqncsKK3sZv</string><!---->
+        </dict>
+        <key>OnDemandEnabled</key>
+        <integer>1</integer>
+        <key>OnDemandRules</key>
+        <array>
+          <dict>
+            <key>InterfaceTypeMatch</key>
+            <string>WiFi</string>
+            <key>SSIDMatch</key>
+            <array>
+              <!-- 连接至以下Wi-Fi时 断开VPN（已知安全环境） -->
+              <string>wifi_tpl</string>
+            </array>
+            <key>Action</key>
+            <string>Disconnect</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+          </dict>
+          <!-- 各情景的断开/连接配置 分别为 手机流量 以太网 WI-FI 默认配置-->
+          <!---->
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+            <key>InterfaceTypeMatch</key>
+            <string>Cellular</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+            <key>InterfaceTypeMatch</key>
+            <string>Ethernet</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+            <key>InterfaceTypeMatch</key>
+            <string>WiFi</string>
+          </dict>
+          <dict>
+            <key>Action</key>
+            <string>Ignore</string>
+          </dict>
+        </array>
+        <key>OverridePrimary</key>
+        <true/>
+        <key>IPv4</key>
+        <dict>
+          <key>OverridePrimary</key>
+          <integer>1</integer>
+        </dict>
+        <key>PayloadType</key>
+        <string>com.apple.vpn.managed</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+      </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>VPN</string>
+    <key>PayloadIdentifier</key>
+    <string>TW.BAB78424-28FB-4654-915D-93D0CB87CC7C</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>A9F4B095-4336-4ECD-A2B2-3D52D778E744</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+  </dict>
+</plist>
