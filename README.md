@@ -19,7 +19,9 @@ cd /var/www/html && wget https://github.com/richweiwei/SetupVPN/raw/master/vpn.m
 5、把http/newip/vpn.mobileconfig发送到iOS，由safari浏览打开，按提示安装vpn配置文件
 
 5.1 优先尝试【成功的话不需要步骤3/4】
+
 https://github.com/richweiwei/SetupVPN/raw/master/vpn.mobileconfig
 
 5.2 github下载不了， 从新服务器下载
+
 http/1.2.3.4/vpn.mobileconfig
